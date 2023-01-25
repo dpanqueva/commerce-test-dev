@@ -20,7 +20,5 @@ public class Brands {
     @Column(name = "name")
     private String name;
 
-    /*@OneToMany(cascade = CascadeType.ALL, mappedBy = "brand")
-    private List<Prices> pricesList;*/
 
 }

@@ -79,7 +79,7 @@ Para la solución de este reto, se implemento:
 ## Pruebas unitarias
 Se realiza test unitarios al controller, partiendo en la información inicial de la prueba
 
-[![N|Solid](https://github.com/dpanqueva/quasar/blob/master/evidence/deploy/secret-split-coverage-util.PNG)]()
+[![N|Solid](https://github.com/dpanqueva/commerce-test-dev/blob/master/documentacion/wiki/arquitectura/test.PNG)]()
 
 ## SonarQube
 Código limpio de acuerdo al análisis de [SonarQube](https://www.sonarqube.org/)

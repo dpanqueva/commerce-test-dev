@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,6 +21,4 @@ public class Products {
     @Column(name = "name")
     private String name;
 
-    /*@OneToMany(cascade = CascadeType.ALL, mappedBy = "product")
-    private List<Prices> pricesList;*/
 }

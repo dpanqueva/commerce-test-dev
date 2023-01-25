@@ -12,11 +12,9 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 @Table(name = "prices")
-@NamedQueries({
-        @NamedQuery(name = "Prices.findByDatesAndProductAndBrand", query = "SELECT p FROM Prices p WHERE p.startDate >= " +
-                ":startDate AND p.brand.brandId = :brandId " +
-                "AND p.product.productId = :productId ORDER BY p.priority ASC LIMIT 1 ")
-})
+@NamedQuery(name = "Prices.findByDatesAndProductAndBrand", query = "SELECT p FROM Prices p WHERE p.startDate >= " +
+        ":startDate AND p.brand.brandId = :brandId " +
+        "AND p.product.productId = :productId ORDER BY p.priority ASC LIMIT 1 ")
 public class Prices {
 
     @Id
