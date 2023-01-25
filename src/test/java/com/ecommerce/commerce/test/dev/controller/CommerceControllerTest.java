@@ -46,7 +46,7 @@ class CommerceControllerTest {
         Date startDate = model.convertStringToDateWithFormat("2020-06-14-10.00.00");
 
         SearchDto request = new SearchDto(startDate, null
-                , new ProductsDto(35455, "", null), new BrandsDto(1, "", null));
+                , new ProductsDto(35455, ""), new BrandsDto(1, ""));
         ResponseEntity<PricesDto> response = restTemplate.postForEntity("http://localhost:".concat(port.toString())
                 .concat("/api/v1/search"), request, PricesDto.class);
         assertSame( HttpStatus.OK,response.getStatusCode());
@@ -58,7 +58,7 @@ class CommerceControllerTest {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss");
         Date startDate = formatter.parse("2020-06-14-16.00.00");
         SearchDto request = new SearchDto(startDate, null
-                , new ProductsDto(35455, "", null), new BrandsDto(1, "", null));
+                , new ProductsDto(35455, ""), new BrandsDto(1, ""));
         ResponseEntity<PricesDto> response = restTemplate.postForEntity("http://localhost:".concat(port.toString())
                 .concat("/api/v1/search"), request, PricesDto.class);
         assertSame( HttpStatus.OK,response.getStatusCode());
@@ -71,7 +71,7 @@ class CommerceControllerTest {
         Date startDate = formatter.parse("2020-06-14-21.00.00");
         Date endDate = formatter.parse("2020-06-14-21.00.00");
         SearchDto request = new SearchDto(startDate, endDate
-                , new ProductsDto(35455, "", null), new BrandsDto(1, "", null));
+                , new ProductsDto(35455, ""), new BrandsDto(1, ""));
         ResponseEntity<PricesDto> response = restTemplate.postForEntity("http://localhost:".concat(port.toString())
                 .concat("/api/v1/search"), request, PricesDto.class);
         assertSame(HttpStatus.OK,response.getStatusCode());
@@ -84,7 +84,7 @@ class CommerceControllerTest {
         Date startDate = formatter.parse("2020-06-15-10.00.00");
         Date endDate = formatter.parse("2020-06-15-10.00.00");
         SearchDto request = new SearchDto(startDate, endDate
-                , new ProductsDto(35455, "", null), new BrandsDto(1, "", null));
+                , new ProductsDto(35455, ""), new BrandsDto(1, ""));
         ResponseEntity<PricesDto> response = restTemplate.postForEntity("http://localhost:".concat(port.toString())
                 .concat("/api/v1/search"), request, PricesDto.class);
         assertSame( HttpStatus.OK,response.getStatusCode());
@@ -97,7 +97,7 @@ class CommerceControllerTest {
             Date startDate = formatter.parse("2020-06-15-21.00.00");
             Date endDate = formatter.parse("2020-06-15-21.00.00");
             SearchDto request = new SearchDto(startDate, endDate
-                    , new ProductsDto(35455, "", null), new BrandsDto(1, "", null));
+                    , new ProductsDto(35455, ""), new BrandsDto(1, ""));
             ResponseEntity<PricesDto> response = restTemplate.postForEntity("http://localhost:".concat(port.toString())
                     .concat("/api/v1/search"), request, PricesDto.class);
         assertSame( HttpStatus.NO_CONTENT,response.getStatusCode());
