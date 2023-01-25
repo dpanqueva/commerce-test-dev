@@ -1,5 +1,5 @@
-# Operación fuego de quasar
-## _Proyecto para envio de mensaje secreto, evaluando la triangulación de posiciones entre los satelites y la nave principal._
+# Ecommerce price
+## _Proyecto para la consulta de la oferta final a partir de una fecha._
 
 ## Instrucciones
 Recomendaciones a tener en cuenta:
